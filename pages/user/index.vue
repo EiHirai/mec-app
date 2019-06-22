@@ -1,13 +1,60 @@
 <template>
   <div class="container">
-    <div class="row">
-      <h1>This is my first page for mec lecture</h1>
-      <include src="../assets/src/mapping_sample_10.html"></include>
-    </div>
-    <div class="row">
-      <div>
-        <nuxt-link to="/">ホームページに戻る</nuxt-link>
+    <div>
+      <logo />
+      <h1 class="title">
+        mec-app
+      </h1>
+      <h2 class="subtitle">
+        First web app for MEC lecture
+      </h2>
+      <iframe src="./mapping_sample_10.html" width="1000" height="500"></iframe>
+      <div class="links">
+        <nuxt-link to="/">ホーム画面に戻る</nuxt-link>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import Logo from '~/components/Logo.vue'
+
+export default {
+  components: {
+    Logo
+  }
+}
+</script>
+
+<style>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
+</style>

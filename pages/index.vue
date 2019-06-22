@@ -6,7 +6,7 @@
         mec-app
       </h1>
       <h2 class="subtitle">
-        My superior Nuxt.js project
+        First web app for MEC lecture
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green"
